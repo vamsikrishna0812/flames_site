@@ -14,5 +14,4 @@ def flames_fun():
     result = flames_analyzer(n1, n2)
     return render_template('flames.html', result=result, bfname = n1, gfname = n2)
 
-if __name__ == '__main__':
-    flames.run(debug=False)
+
