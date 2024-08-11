@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #ff80bf;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 150px;
+            font-family: "Sofia", sans-serif;
+        }
+
+        p {
+            align-items: center;
+            font-family: 'Brush Script MT', cursive;
+            font-size: 25px;
+        }
+
+    </style>
+</head>
+<body>
+    {% set f = { "F" : "FRIEND",
+                 "L" : "LOVER",
+                 "A" : "ATTRACTION",
+                 "M" : "MARRIAGE",
+                 "E" : "ENEMIES",
+                 "S" : "SISTER"
+               } %}
+    
+    {% set answer = f[result] %}
+    <h1>{{ answer }}</h1>
+    <p>after analyzing the FLAMES for Mr.{{ bfname }} and Ms.{{ gfname }}, the obtained result is {{answer}}</p>
+</body>
+</html>
