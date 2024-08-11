@@ -3,7 +3,7 @@ from flames_package.flames_analyzer import flames_analyzer
 
 flames = Flask(__name__)
 
-@flames.route('/', methods = ['GET', 'VIEW', 'POST'])
+@flames.route('/', methods = ['GET',  'POST'])
 def hello():
     return render_template('index.html')
 
